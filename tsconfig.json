@@ -4,18 +4,12 @@
   ],
   "include": [
     "./src/**/*.tsx",
-    "./src/**/*.ts"
+    "./src/**/*.ts",
   ],
   "compilerOptions": {
     "target": "es6",
     "module": "commonjs",
-    "paths": {
-      "@modules/*": ["src/modules/*"],
-      "@databases/*": ["src/databases/*"],
-      "@configs/*": ["src/configs/*"],
-      "@commons/*": ["src/commons/*"],
-      "@app": ["src/server"],
-    },
+    "baseUrl": ".",
     "lib": [
       "dom",
       "es6",
@@ -39,6 +33,5 @@
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "resolveJsonModule": true,
-    "baseUrl": "."
   },
 }

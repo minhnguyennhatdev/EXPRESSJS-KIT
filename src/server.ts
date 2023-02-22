@@ -1,6 +1,5 @@
-import configuration from "@configs/configuration";
-
 import express from "express";
+import configuration from "./configs/configuration";
 
 const app = express();
 
