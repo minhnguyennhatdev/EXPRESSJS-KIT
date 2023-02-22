@@ -1,11 +1,6 @@
 import express from "express";
-import configuration from "./configs/configuration";
+import appInit from "./configs/app-init";
 
 const app = express();
 
-app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
-
-app.listen(configuration.PORT, () => {
-  console.log(`Server running on PORT ${configuration.PORT}`);
-});
+appInit(app);
