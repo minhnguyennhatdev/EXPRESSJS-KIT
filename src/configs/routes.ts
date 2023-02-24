@@ -1,7 +1,7 @@
 import express from "express";
-import HelloRoute from "../modules/hello/hello.route";
+import AuthRoute from "../modules/auth/auth.route";
 const routes = express();
 
-routes.use("/hello", HelloRoute);
+routes.use("/", AuthRoute);
 
 export default routes;

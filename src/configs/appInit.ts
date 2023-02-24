@@ -7,7 +7,9 @@ function appInit(app: Express) {
   app.use(express.urlencoded({ extended: true }));
   app.use(configuration.PREFIX, Routes);
   app.listen(configuration.PORT, () => {
-    console.log(`Server running on PORT ${configuration.PORT}`);
+    console.log(
+      `Server running on PORT ${configuration.PORT} ${configuration.PREFIX}`,
+    );
   });
 }
 

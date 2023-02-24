@@ -1,7 +1,5 @@
 FROM node:latest
 
-RUN pwd && ls
-
 # Create app directory
 RUN mkdir -p /usr/src/demo
 WORKDIR /usr/src/demo
@@ -15,5 +13,5 @@ COPY ../. /usr/src/demo
 
 RUN yarn build
 
-EXPOSE 3000
+EXPOSE 3101
 CMD [ "yarn", "start" ]
